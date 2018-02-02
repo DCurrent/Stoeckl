@@ -1,6 +1,6 @@
 <?php
 
-	namespace dc\access;
+	namespace dc\stoeckl;
 
 	interface ilookup
 	{

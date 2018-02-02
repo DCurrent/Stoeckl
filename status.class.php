@@ -1,6 +1,6 @@
 <?php
 	
-	namespace dc\access;
+	namespace dc\stoeckl;
 
 	interface istatus
 	{
@@ -145,7 +145,7 @@
 			}
 			else
 			{
-				$data_account = new \dc\access\DataAccount();
+				$data_account = new \dc\stoeckl\DataAccount();
 				
 				$this->data_account = $data_account;
 			}
