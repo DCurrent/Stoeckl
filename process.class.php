@@ -147,10 +147,8 @@
 		
 		// Shortcut controller for login process.
 		public function process_control()
-		{
+		{			
 			$this->populate_from_request();
-			
-			//echo '<br />$this->action: '.$this->action;
 			
 			switch($this->action)
 			{
@@ -160,7 +158,7 @@
 					$this->data_account->populate_from_request();
 					
 					// First try local.
-					if($this->get_config()->get_access_local() == TRUE)
+					if($this->get_config()->get_use_local() == TRUE)
 					{
 						$this->login_local();
 					}					
@@ -175,7 +173,7 @@
 					break;
 					
 				case ACTION::LOGOFF;
-					
+
 					$this->logoff();
 					break;
 			}
