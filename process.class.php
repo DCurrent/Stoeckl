@@ -160,7 +160,10 @@
 					$this->data_account->populate_from_request();
 					
 					// First try local.
-					$this->login_local();
+					if($this->get_config()->get_access_local() == TRUE)
+					{
+						$this->login_local();
+					}					
 									
 					// If local fails, try LDAP.
 					if($this->login_result != LOGIN_RESULT::LOCAL)

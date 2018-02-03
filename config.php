@@ -12,7 +12,7 @@
 		const DOMAIN_PREFIX		= ', ad/, ad\, mc\, mc/';
 		const DIAGNOSTIC		= FALSE;						// Record user info to outside database for diagnostics.
 		const DIAGNOSTIC_MAIL	= TRUE;							// Record user info to email for diagnostics.
-		const USE_LOCAL			= TRUE;							// Attempt to log in user with local account.
+		const USE_LOCAL			= FALSE;							// Attempt to log in user with local account.
 	}
 	
 	abstract class SES_KEY
